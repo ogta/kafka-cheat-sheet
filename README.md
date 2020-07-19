@@ -35,4 +35,8 @@ kill $(lsof -t -i:9092)
 kill $(lsof -t -i:2181)
 ```
 
- 
+#### Create Topic
+```
+bin/kafka-topics.sh --create --zookeeper zookeper-ip:zookeperport --replication-factor 1 --partitions 1 --topic topic-name
+```
+
