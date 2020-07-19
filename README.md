@@ -37,10 +37,17 @@ kill $(lsof -t -i:2181)
 
 #### Create Topic
 ```
-bin/kafka-topics.sh --create --zookeeper zookeper-ip:zookeperport --replication-factor 1 --partitions 1 --topic topic-name
+bin/kafka-topics.sh --create --zookeeper zookeper-ip:zookeper-port --replication-factor 1 --partitions 1 --topic topic-name
 ```
 
 #### Topic List
 ```
-bin/kafka-topics.sh --list --zookeeper zookeper-ip:zookeperport
+bin/kafka-topics.sh --list --zookeeper zookeper-ip:zookeper-port
 ```
+
+#### Delete Topic
+```
+bin/kafka-topics.sh --zookeeper zookeper-ip:zookeper-port --delete --topic topic_name
+```
+
+
