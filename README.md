@@ -24,3 +24,15 @@ bin/kafka-server-start.sh config/server.properties
 ```
 bin/kafka-server-stop.sh config/server.properties
 ```
+
+#### Kill Kafka 
+```
+kill $(lsof -t -i:9092) 
+```
+
+#### Kill Zookeper
+```
+kill $(lsof -t -i:2181)
+```
+
+ 
