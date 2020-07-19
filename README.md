@@ -14,3 +14,13 @@ bin/zkCli.sh
 ```
 bin/zkServer.sh stop
 ```
+
+#### Kafka Start
+```
+bin/kafka-server-start.sh config/server.properties
+```
+
+#### Kafka Stop
+```
+bin/kafka-server-stop.sh config/server.properties
+```
