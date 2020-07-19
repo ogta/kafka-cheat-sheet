@@ -40,3 +40,7 @@ kill $(lsof -t -i:2181)
 bin/kafka-topics.sh --create --zookeeper zookeper-ip:zookeperport --replication-factor 1 --partitions 1 --topic topic-name
 ```
 
+#### Topic List
+```
+bin/kafka-topics.sh --list --zookeeper zookeper-ip:zookeperport
+```
